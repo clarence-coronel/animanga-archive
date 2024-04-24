@@ -1,35 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
-function App() {
-  const [count, setCount] = useState(0)
+// Define your components for different pages
+// const Home = () => <h1>Home Page</h1>;
+// const About = () => <h1>About Page</h1>;
+// const Contact = () => <h1>Contact Page</h1>;
 
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+// const Navigation = () => (
+//   <nav className="w-full h-12 bg-white shadow-md flex justify-center items-center">
+//     <ul className="flex">
+//       <li className="mr-6">
+//         <Link to="/">Home</Link>
+//       </li>
+//       <li className="mr-6">
+//         <Link to="/about">About</Link>
+//       </li>
+//       <li className="mr-6">
+//         <Link to="/contact">Contact</Link>
+//       </li>
+//     </ul>
+//   </nav>
+// );
 
-export default App
+const App = () => (
+  <Router>
+    <div>
+      <Navigation />
+      <Routes>
+        {/* <Route exact path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} /> */}
+      </Routes>
+    </div>
+  </Router>
+);
+
+export default App;
