@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-
+import Navigation from './components/navigation/Navigation'
 // Define your components for different pages
 // const Home = () => <h1>Home Page</h1>;
 // const About = () => <h1>About Page</h1>;
@@ -26,11 +26,11 @@ const App = () => (
   <Router>
     <div>
       <Navigation />
-      <Routes>
-        {/* <Route exact path="/" element={<Home />} />
+      {/* <Routes>
+        <Route exact path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} /> */}
-      </Routes>
+        <Route path="/contact" element={<Contact />} />
+      </Routes> */}
     </div>
   </Router>
 );
