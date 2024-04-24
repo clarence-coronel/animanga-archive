@@ -36,7 +36,7 @@ function Home() {
     return(
         <>
             <div className="w-full bg-black ">
-                <div className="grid p-3 place-content-center place-items-center animeContainer max-w-[1200px] mx-auto h-fit w-full gap-5">
+                <div className="grid p-3 place-content-center place-items-center animeContainer max-w-[1200px] mx-auto h-fit w-full gap-x-5 gap-y-10">
                     { !isPending && list.data.map(item => {
                         return (<Card title={item.title} img={item.images.jpg.image_url} key={item.mal_id} />)
                     })}
