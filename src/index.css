@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    *{
+        @apply text-neutral-100
+    }
+
+    ::-moz-selection {
+        @apply bg-white text-orange-500
+      }
+    
+    ::selection {
+        @apply bg-orange-500 text-white
+    }
+}
+
+@layer components {
+    .animeContainer{
+        grid-template-columns: repeat( auto-fill, minmax(208px, 1fr) );
+    }
+
+    @media only screen and (max-width: 640px) {
+        .animeContainer{
+            grid-template-columns: repeat( auto-fill, minmax(128px, 1fr) );
+        }
+      }
+}
