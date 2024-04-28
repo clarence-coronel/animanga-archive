@@ -78,7 +78,7 @@ function Home() {
     return(
         <>
             <div className="w-full dark:bg-black duration-200 bg-white flex flex-col gap-5 py-10">
-                <div className="gap-5 w-full duration-200 dark:bg-black bg-white max-w-[1200px] mx-auto flex justify-center items-center">
+                <div className="px-2 gap-5 max-md:gap-2 w-full duration-200 dark:bg-black bg-white max-w-[1200px] mx-auto flex justify-center items-center">
                     <button disabled={!list} onClick={toggleMode} className={`${mode === "anime" ? "bg-orange-500 hover:bg-orange-500/90" : "bg-yellow-500 hover:bg-yellow-500/90"} disabled:bg-neutral-400 disabled:hover:bg-neutral-400 disabled:hover:cursor-not-allowed flex justify-center items-center duration-200 text-white px-3 py-2 rounded-full font-semibold`}>{mode[0].toUpperCase() + mode.substring(1)} </button>
                     <div className="border-neutral-300 dark:border-neutral-700 duration-200 w-full max-w-[400px] rounded-full border-2 py-2 px-3 flex justify-between items-center">
                         <input defaultValue={searchInput}  onInput={search} placeholder="Type to search..." className="dark:text-white text-black peer w-full bg-transparent focus:outline-none" type="text" name="" id="" />
