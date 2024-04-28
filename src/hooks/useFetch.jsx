@@ -24,7 +24,7 @@ function useFetch(url) {
         })
     }, [url])
 
-    return { data, isPending, error }
+    return { data, setData, isPending, setIsPending, error }
 }
 
 export default useFetch

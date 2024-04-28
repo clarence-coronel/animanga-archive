@@ -21,6 +21,32 @@
         grid-template-columns: repeat( auto-fill, minmax(208px, 1fr) );
     }
 
+    @keyframes toLight {
+        from{
+            transform: translate(-10%, -50%)
+        }
+        to {
+            transform: translate(-90%, -50%)
+        }
+    }
+
+    .toLight{
+        animation: toLight 0.2s forwards;
+    }
+
+    @keyframes toDark {
+        from{
+            transform: translate(-90%, -50%)
+        }
+        to {
+            transform: translate(-10%, -50%)
+        }
+    }
+
+    .toDark{
+        animation: toDark 0.2s forwards;
+    }
+
     @media only screen and (max-width: 640px) {
         .animeContainer{
             grid-template-columns: repeat( auto-fill, minmax(128px, 1fr) );
