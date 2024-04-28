@@ -16,7 +16,7 @@
       }
     
     ::selection {
-        @apply bg-orange-500 text-white
+        @apply bg-orange-500 text-white duration-200
     }
 }
 
