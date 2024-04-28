@@ -1,7 +1,7 @@
 function Navigation({ themeSwitch, theme  }) {
 
     return(
-        <nav className="w-full dark:border-b-2 dark:border-neutral-700 dark:bg-black shadow-md dark:shadow-none duration-200 z-50 backdrop-blur-[50px]">
+        <nav className="sticky top-0 left-0 w-full dark:border-b-2 dark:border-neutral-700 dark:bg-black shadow-md dark:shadow-none duration-200 z-50 backdrop-blur-[50px]">
             <div className="flex justify-between items-center max-w-[1200px] mx-auto w-full p-5 font-bold text-xl ">
                 {/* Logo */}
                 <div>
