@@ -97,6 +97,13 @@ function Home() {
                         )
                     })}
                 </div>
+                    {
+                        !isPending && list.data.length == 0 && 
+                            <span className="flex justify-center items-start pt-[10vh] min-h-[65vh] text-lg font-medium mx-auto text-white">
+                                No result.
+                            </span>
+                        
+                    }
             </div>
             {
                 list && list.data.length != 0 && (
