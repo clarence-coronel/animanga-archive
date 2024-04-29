@@ -99,11 +99,13 @@ function Home() {
                 </div>
             </div>
             {
-                list && list.data.length != 0 && (<div className=" flex gap-5 dark:bg-black justify-center p-5">
-                <button disabled={page == 1} onClick={() => updatePageNumber(-1)} className="disabled:text-neutral-500 disabled:hover:text-neutral-500 disabled:hover:cursor-not-allowed hover:text-neutral-400 duration-200 dark:text-white text-black">Previous</button>
-                <span className="dark:text-white text-black font-bold select-none">{page}</span>
-                <button disabled={!list.pagination.has_next_page} onClick={() => updatePageNumber(1)} className="disabled:text-neutral-500 disabled:hover:text-neutral-500 disabled:hover:cursor-not-allowed hover:text-neutral-400 duration-200 dark:text-white text-black">Next</button>
-            </div>) 
+                list && list.data.length != 0 && (
+                <div className=" flex gap-5 bg-transparent justify-center p-5">
+                    <button disabled={page == 1} onClick={() => updatePageNumber(-1)} className="disabled:text-neutral-500 disabled:hover:text-neutral-500 disabled:hover:cursor-not-allowed hover:text-neutral-400 duration-200 dark:text-white text-black">Previous</button>
+                    <span className="dark:text-white text-black font-bold select-none duration-200">{page}</span>
+                    <button disabled={!list.pagination.has_next_page} onClick={() => updatePageNumber(1)} className="disabled:text-neutral-500 disabled:hover:text-neutral-500 disabled:hover:cursor-not-allowed hover:text-neutral-400 duration-200 dark:text-white text-black">Next</button>
+                </div>
+            ) 
             }
         </>
     )

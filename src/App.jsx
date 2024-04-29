@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Navigation from './components/Navigation'
+import Footer from './components/Footer';
 import Home from './pages/Home/Home'
 
 const App = () => {
@@ -28,6 +29,7 @@ const App = () => {
         <Routes>
           <Route exact path="/" element={<Home />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );

@@ -8,7 +8,7 @@
     }
 
     body{
-        @apply dark:bg-black bg-white
+        @apply dark:bg-black bg-white duration-200
     }
 
     ::-moz-selection {
